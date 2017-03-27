@@ -34,7 +34,7 @@
 
     'website' : 'http://www.argil.mx',
    
-    'depends': ['web','point_of_sale','pos_stock_avail','pos_pricelist_aces'],
+    'depends': ['web','point_of_sale'],
     
     'installable': True,
     
