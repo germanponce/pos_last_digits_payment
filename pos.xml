@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+       
+        <record model="ir.ui.view" id="pos_order_reference_payment">
+            <field name="name">pos.order.reference</field>
+            <field name="model">pos.order</field>
+            <field name="inherit_id" ref="point_of_sale.view_pos_pos_form"/>
+            <field name="arch" type="xml">
+                  <field name="fiscal_position_id" position="after">
+                    <field name="reference_payment" attrs="{'readonly':[('state','!=','draft')]}" />
+                </field>
+            </field>
+        </record>
+    </data>
+</openerp>

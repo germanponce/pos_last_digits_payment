@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<templates id="template" xml:space="preserve">
+	<t t-extend="PaymentScreenWidget" >
+        <t t-jquery="div.payment-buttons" t-operation="before">
+           <div class="pos-order-note-div">
+			   <br />
+			   <div>
+				   <span class="label">Ultimos 4 Digitos:</span>
+				</div>   
+                <input class="pos-order-note" id="note_box_id" type="text" maxlength="4" size="10"/>
+            </div>
+           
+        </t>
+
+    </t>
+    
+
+
+<!-- <t t-extend="PaymentScreenWidget">
+        <t t-jquery="div.payment-buttons" t-operation="after">
+            <div class='client-detail-payment'>
+                <span class='label'>Referencia Pago</span>
+                <input class='detail reference_payment'    name='reference_payment' placeholder='XXXX'></input>
+            </div>
+        </t>
+    </t> -->
+
+
+</templates>
