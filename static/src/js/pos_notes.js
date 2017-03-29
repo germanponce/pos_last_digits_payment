@@ -110,9 +110,14 @@ init: function(parent, options) {
 
     },
     payment_note: function(input) {
+
         var self = this;
         var input_val = $('#note_box_id').val();
+        if (input_val.length <= 3 ){
+            var input_val = $('#note_box_id').val() + input;
+        }
         self.pos.get('selectedOrder').set_note(input_val);
+        
 
     },
     payment_note_minus: function() {
